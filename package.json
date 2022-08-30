@@ -1,0 +1,10 @@
+{
+  "name": "spotdark",
+  "version": "1.0.0",
+  "description": "Ensures your node modules directory is ignored by spotlight",
+  "scripts": {
+    "postinstall": "node -e \"fs.closeSync(fs.openSync(process.env.npm_config_local_prefix + '/node_modules/.metadata_never_index', 'w'));\""
+  },
+  "author": "Kieran Huggins",
+  "license": "ISC"
+}
